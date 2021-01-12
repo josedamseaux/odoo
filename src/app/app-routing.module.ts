@@ -9,6 +9,7 @@ import { TarifaComponent } from './componentes/tarifa/tarifa.component';
 import { TourComponent } from './componentes/tour/tour.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'tour', component: TourComponent },
@@ -16,9 +17,6 @@ const routes: Routes = [
   { path: 'tarifa', component: TarifaComponent },
   { path: 'aprende', component: AprendeComponent },
   { path: 'comunidad', component: ComunidadComponent },
-
-
-
 
 
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
